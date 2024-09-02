@@ -7,8 +7,12 @@
     --cor-fonte-subtitulo: #D7D5EB;
     --cor-fonte-secundaria: #8A87AA;
     --cor-fundo-output: #2C1746;
-    --cor-fundo-retangulo: #2C1746;
+    --cor-fundo-retangulo: #180828;
+    --cor-borda-retangulo: #694A81;
     --cor-botao: #FD58FF;
+    --cor-fraca: #E71B32;
+    --cor-media: #FAF408;
+    --cor-forte: #00FF85;
 
     /* fontes */
     --fonte-principal: 'Roboto Mono', sans-serife;
@@ -20,6 +24,7 @@
 body {
     background-color: var(--bgcolor);
     align-items: center;
+    justify-content: center;
     display: flex;
     flex-direction: column;
     color: var(--cor-fonte-principal);
@@ -54,13 +59,20 @@ p {
     color: var(--cor-fonte-principal);
 }
 
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 27.8px;
+    align-items: center;
+}
+
 .output-senha{
     width: 68.0625rem;
     display: flex;
     background-color: var(--cor-fundo-output);
     padding: 29px 41px;
     justify-content: space-between;
-    border-bottom: 4.4px var(--cor-botao);
+    border-bottom: 4.4px solid var(--cor-botao);
     margin-top: 57px;
 }
 
@@ -82,3 +94,105 @@ input{
     font-size: 40px;
     font-weight: 500;
 }
+
+.personalizar{
+    background-color: var(--cor-fundo-retangulo);
+    width: 68.0625rem;
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+    padding: 35px 40px 75.28px 40px;
+    color: var(--cor-fonte-secundaria);
+    font-family: var(--fonte-secundaria);
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 27.8px;
+    border: 1px solid var(--cor-borda-retangulo);
+}
+
+.opcoes{
+    display: flex;
+    gap: 64px;
+}
+
+h2{
+    font-family: var(--fonte-principal);
+    font-size: 28px;
+    color: var(--cor-fonte-subtitulo);
+}
+
+.quantidade-caracteres{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.valor{
+    width:  5.3688rem;
+    height: 3.4375rem;
+    border: 1px solid var(--cor-borda-retangulo);
+    background-color: var(--cor-fundo-output);
+    text-align: start;
+    padding: 0.8125rem 0 0 0.7500rem;
+}
+
+.barra {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    background-color: #2C1746;
+    outline: none;
+  }
+  
+  .barra::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    cursor: pointer;
+    transform: translateX(calc(var(--thumb-position) - 50%)) translateY(-30%);
+  }
+  
+  .barra::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    background-color: #2C1746;
+  }
+
+  .barra::-webkit-slider-runnable-track {
+    background-image: linear-gradient(to right, #ffffff 0%, #ffffff var(--thumb-position), #2C1746 var(--thumb-position));
+  }
+
+
+  .caracteristica{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .opcao-caracteres{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font-size: 20px;
+  }
+
+.alternativas label{
+    display: flex;
+    align-items: center;
+}  
+
+  .alternativas input{
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    background-color: var(--cor-fundo-output) !important;
+    border: 1px solid var(--cor-borda-retangulo);
+  }
+
+
+
+  /* resolver o problema da cor do input range e checkbox */

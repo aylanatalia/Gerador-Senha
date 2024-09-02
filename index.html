@@ -19,18 +19,53 @@
         </div>
     </header>
     <main>
-        <!-- caixa de saida da senha -->
-        <div class="output-senha">
-            <div class="texto-output">
-                <p class="texto">senha</p>
-                <input type="text" id="senha" class="senha" readonly>
+        <div class="conteudo">
+            <!-- caixa de saida da senha -->
+            <div class="output-senha">
+                <div class="texto-output">
+                    <p class="texto">senha</p>
+                    <input type="text" id="senha" class="senha" readonly>
+                </div>
+                <div class="botao-output">
+                    <img src="./imagens/copy.png" alt="Copiar">
+                    <img src="./imagens/refresh.png" alt="Gerar senha">
+                </div>
             </div>
-            <div class="botao-output">
-                <img src="./imagens/copy.png" alt="Copiar">
-                <img src="./imagens/refresh.png" alt="Gerar senha">
+            <!-- caixa de personalização da senha a ser gerada -->
+            <div class="personalizar">
+                <h2 class="titulo-personalizar">Personalize sua senha</h2>
+                <div class="opcoes">
+                    <div class="quantidade-caracteres">
+                        <label for="numero-caracteres">Número de caracteres</label>
+                        <input type="range" class="barra" id="numero-caracteres" value="12" min="0" max="40">
+                        <span class="valor" id="valor-selecionado">12</span>
+                    </div>
+                    <div class="caracteristica">
+                        <p>Característica da senha</p>
+                        <div class="opcoes-caracteres">
+                            <div class="alternativas">
+                                <label><input id="checkbox" type="checkbox">Letras maiusculas</label>
+                            </div>
+                            <div class="alternativas">
+                                <label><input id="checkbox" type="checkbox">Letras minusculas</label>
+                            </div>
+                            <div class="alternativas">
+                                <label><input id="checkbox" type="checkbox">Números</label>
+                            </div>
+                            <div class="alternativas">
+                                <label><input id="checkbox" type="checkbox">Símbolos</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="forca-senha">
+                        <p>Força da senha</p>
+
+                    </div>
+                </div>
             </div>
         </div>
     </main>
+    <script src="./js/range.js"></script>
 </body>
 
 </html>
