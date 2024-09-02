@@ -47,4 +47,38 @@ p {
     font-family: var(--fonte-secundaria);
     font-size: 24px;
     font-weight: 400;
+    color: var(--cor-fonte-secundaria);
+}
+
+.subtitulo {
+    color: var(--cor-fonte-principal);
+}
+
+.output-senha{
+    width: 68.0625rem;
+    display: flex;
+    background-color: var(--cor-fundo-output);
+    padding: 29px 41px;
+    justify-content: space-between;
+    border-bottom: 4.4px var(--cor-botao);
+    margin-top: 57px;
+}
+
+.texto-output{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.botao-output{
+    display: flex;
+    gap: 32px;
+    padding-right: 41px;
+}
+
+input{
+    background-color: transparent;
+    border: none;
+    font-size: 40px;
+    font-weight: 500;
 }
