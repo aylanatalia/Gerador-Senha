@@ -136,38 +136,55 @@ h2{
     padding: 0.8125rem 0 0 0.7500rem;
 }
 
-.barra {
+/* estilos gerais da barra */
+.barra{
     -webkit-appearance: none;
-    width: 100%;
-    height: 5px;
-    border-radius: 5px;
-    background-color: #2C1746;
-    outline: none;
-  }
-  
-  .barra::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background-color: #ffffff;
+    appearance: none;
+    width: 300px;
+    background: transparent;
     cursor: pointer;
-    transform: translateX(calc(var(--thumb-position) - 50%)) translateY(-30%);
-  }
-  
-  .barra::-webkit-slider-runnable-track {
-    width: 100%;
-    height: 5px;
-    border-radius: 5px;
-    background-color: #2C1746;
-  }
+    outline: none;
+}
 
-  .barra::-webkit-slider-runnable-track {
-    background-image: linear-gradient(to right, #ffffff 0%, #ffffff var(--thumb-position), #2C1746 var(--thumb-position));
-  }
+/* barra não preenchida */
+.barra::-webkit-slider-runnable-track{
+    width: 300px;
+    height: 0.41px;
+    border-radius: 10px;
+    background: var(--cor-fundo-output);
+    border: 10px solid var(--cor-fundo-output);
+}
 
+.barra::-moz-range-track{
+    width: 300px;
+    height: 0.41px;
+    border-radius: 10px;
+    background: var(--cor-fundo-output);
+    border: 10px solid var(--cor-fundo-output);
+}
 
-  .caracteristica{
+/* thumb */
+.barra::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: var(--cor-fonte-principal);
+    border: none;
+    position: relative;
+    top: -13px;
+}
+
+.barra::-moz-range-thumb{
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: var(--cor-fonte-principal);
+    border: none;
+    position: relative;
+    top: -13px;
+}
+.caracteristica{
     display: flex;
     flex-direction: column;
     gap: 24px;
