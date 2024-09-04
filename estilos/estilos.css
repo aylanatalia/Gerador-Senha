@@ -82,7 +82,7 @@ main {
 
 .senha {
     color: var(--cor-fonte-principal);
-    max-width: 80%;
+    max-width: 90%;
 }
 
 .texto-output {
@@ -283,202 +283,38 @@ h2 {
     cursor: pointer;
 }
 
-@media only screen and (max-width: 700px) {
-    body {
-        font-size: 18px;
-        padding: 20px;
+@media (max-width:800px){
+    body{
+        height: 100%;
+    }
+
+    header{
+        justify-content: center;
+    }
+
+    .conteudo{
+        flex-direction: column;
+    }
+
+    .output-senha{
+        box-sizing: border-box;
+        width: auto;
+        justify-content: center;
+    }
+
+    .personalizar{
+        box-sizing: border-box;
+        width: auto;
+        justify-content: center;
+    }
+
+    .titulo-personalizar{
         text-align: center;
-        margin-left: 20px;
     }
 
-    header {
+    .opcoes{
         flex-direction: column;
-        gap: 10px;
+        justify-content: center;
+        align-items: center;
     }
-
-    main {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .output-senha {
-        width: 90%;
-        padding: 20px;
-        font-size: 24px;
-    }
-
-    .personalizar {
-        width: 90%;
-        padding: 20px;
-        font-size: 18px;
-        margin-bottom: 40px;
-    }
-
-    .opcoes {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .quantidade-caracteres {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .barra {
-        width: 80%;
-        height: 10px;
-    }
-
-    .barra-forca-senha {
-        width: 100%;
-        height: 10px;
-    }
-
-    .legenda-forca-senha {
-        font-size: 16px;
-        width: 80%;
-        margin: 0 auto;
-        margin-top: 8px;
-    }
-
-    .botao-container {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .botao-container {
-        width: 80%;
-        height: 36px;
-        font-size: 18px;
-    }
-}
-
-
-@media only screen and (max-width: 500px) {
-    body {
-        font-size: 14px;
-        padding: 5px;
-        text-align: center;
-        margin-left: 5px;
-    }
-
-    header {
-        flex-direction: column;
-        gap: 3px;
-    }
-
-    main {
-        flex-direction: column;
-        gap: 5px;
-    }
-
-    .output-senha {
-        width: 90%;
-        padding: 5px;
-        font-size: 14px;
-    }
-
-    .personalizar {
-        width: 90%;
-        padding: 5px;
-        font-size: 12px;
-        margin-bottom: 10px;
-    }
-
-    .opcoes {
-        flex-direction: column;
-        gap: 3px;
-    }
-
-    .quantidade-caracteres {
-        flex-direction: column;
-        gap: 3px;
-    }
-
-    .barra {
-        width: 60%;
-        height: 6px;
-    }
-
-    .barra-forca-senha {
-        width: 80%;
-        height: 6px;
-    }
-
-    .legenda-forca-senha {
-        font-size: 10px;
-        width: 60%;
-        margin: 0 auto;
-        margin-top: 3px;
-    }
-
-    .botao-container {
-        flex-direction: column;
-        gap: 3px;
-    }
-
-    .botao-copiar {
-        width: 50%;
-        height: 22px;
-        font-size: 12px;
-    }
-
-    .texto-cabecalho {
-        font-size: 16px;
-    }
-
-    .subtitulo {
-        font-size: 14px;
-    }
-
-    .texto-output {
-        font-size: 12px;
-    }
-
-    .alternativas label {
-        font-size: 10px;
-    }
-
-    .alternativas input {
-        width: 14px;
-        height: 14px;
-    }
-}
-
-@media only screen and (max-width: 300px) {
-    body {
-        font-size: 12px;
-        padding: 3px;
-        text-align: center;
-        margin-left: 3px;
-    }
-
-    header {
-        flex-direction: column;
-        gap: 2px;
-    }
-
-    main {
-        flex-direction: column;
-        gap: 3px;
-    }
-
-    .output-senha {
-        width: 90%;
-        padding: 3px;
-        font-size: 12px;
-    }
-
-    .personalizar {
-        width: 90%;
-        padding: 3px;
-        font-size: 10px;
-        margin-bottom: 5px;
-    }
-
-    .opcoes {
-        flex-direction: column;
-        gap: 2px;
-    }
-
 }
