@@ -136,31 +136,15 @@ h2{
     padding: 0.8125rem 0 0 0.7500rem;
 }
 
-/* estilos gerais da barra */
 .barra{
-    -webkit-appearance: none;
-    appearance: none;
-    width: 300px;
-    background: transparent;
-    cursor: pointer;
+    background: linear-gradient(to right, var(--cor-fonte-principal) 0%, var(--cor-fonte-principal) 30%, var(--cor-fundo-output) 30%, var(--cor-fundo-output) 100%);
+    border: 1px solid transparent;
+    border-radius: 10px;
+    height: 10px;
+    width: 365px;
     outline: none;
-}
-
-/* barra não preenchida */
-.barra::-webkit-slider-runnable-track{
-    width: 300px;
-    height: 0.41px;
-    border-radius: 10px;
-    background: var(--cor-fundo-output);
-    border: 10px solid var(--cor-fundo-output);
-}
-
-.barra::-moz-range-track{
-    width: 300px;
-    height: 0.41px;
-    border-radius: 10px;
-    background: var(--cor-fundo-output);
-    border: 10px solid var(--cor-fundo-output);
+    transition: background 450ms ease-in;
+    -webkit-appearance: none;
 }
 
 /* thumb */
@@ -172,7 +156,7 @@ h2{
     background: var(--cor-fonte-principal);
     border: none;
     position: relative;
-    top: -13px;
+    top: 0;
 }
 
 .barra::-moz-range-thumb{
@@ -182,8 +166,9 @@ h2{
     background: var(--cor-fonte-principal);
     border: none;
     position: relative;
-    top: -13px;
+    top: 0;
 }
+
 .caracteristica{
     display: flex;
     flex-direction: column;
