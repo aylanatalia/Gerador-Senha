@@ -15,24 +15,24 @@ function gerarSenha() {
     const tamanhoSenha = parseInt(numeroCaracteresInput.value);
     const caracteres = [];
 
-    if (maiuscula.checked) {
-        caracteres.push(...'ABCDEFGHIJKLMNOPQRSTUVWXYZ');
-    } 
-    if (minuscula.checked) {
+    if (!maiuscula.checked && !minuscula.checked && !numero.checked && !simbolo.checked) {
         caracteres.push(...'abcdefghijklmnopqrstuvwxyz');
-    } 
-    if (numero.checked) {
-        caracteres.push(...'0123456789');
-    } 
-    if (simbolo.checked) {
-        caracteres.push(...'!@#$%^&*()_+-={}:<>?');
-    } 
-    else{
-        caracteres.push(...'abcdefghijklmnopqrstuvwxyz');
+    } else {
+        if (maiuscula.checked) {
+            caracteres.push(...'ABCDEFGHIJKLMNOPQRSTUVWXYZ');
+        }
+        if (minuscula.checked) {
+            caracteres.push(...'abcdefghijklmnopqrstuvwxyz');
+        }
+        if (numero.checked) {
+            caracteres.push(...'0123456789');
+        }
+        if (simbolo.checked) {
+            caracteres.push(...'!@#$%^&*()_+-={}:<>?');
+        }
     }
-
-    const senha =[];
-    for(let i = 0; i < tamanhoSenha; i++){
+    const senha = [];
+    for (let i = 0; i < tamanhoSenha; i++) {
         const indiceAleatorio = Math.floor(Math.random() * caracteres.length);
         senha.push(caracteres[indiceAleatorio]);
     }
