@@ -290,6 +290,7 @@ h2 {
 
     header{
         justify-content: center;
+        flex-wrap: wrap;
     }
 
     .conteudo{
@@ -300,6 +301,17 @@ h2 {
         box-sizing: border-box;
         width: auto;
         justify-content: center;
+        flex-direction: column;
+    }
+
+    .texto-output{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .botao-output{
+        justify-content: center;
+        margin-top: 8px;
     }
 
     .personalizar{
@@ -318,3 +330,4 @@ h2 {
         align-items: center;
     }
 }
+
