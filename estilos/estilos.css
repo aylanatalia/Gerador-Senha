@@ -227,4 +227,44 @@ h2{
     display: block;
 }
 
+/* barra de força da senha */
+.barra-forca-senha{
+    width: 300px;
+    height: 32px;
+    margin-top: 24px;
+    background: linear-gradient(to right, var(--cor-fraca) 0%,
+    var(--cor-fraca) 33.33%, 
+    var(--cor-fundo-output) 33.33%,
+    var(--cor-fundo-output) 100%);
+}
+
+/* legenda da barra de forca */
+.legenda-forca-senha{
+    margin-top: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.legenda-forca-senha p{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* botão copiar senha */
+.botao-container{
+    display: flex;
+    justify-content: center;
+}
+.botao-copiar{
+    margin-top: 36px;
+    margin-bottom: 89.75px;
+    width: 154px;
+    height: 46px;
+    border-radius: 5px;
+    background-color: var(--cor-botao);
+    font-family: var(--fonte-secundaria);
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--bgcolor);
+}
 
