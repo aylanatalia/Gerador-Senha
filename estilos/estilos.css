@@ -74,6 +74,9 @@ main{
     justify-content: space-between;
     border-bottom: 4.4px solid var(--cor-botao);
     margin-top: 57px;
+    font-weight: 500;
+    font-size: 40px;
+    text-align: center;
 }
 
 .texto-output{
@@ -121,12 +124,14 @@ h2{
     color: var(--cor-fonte-subtitulo);
 }
 
+/* div que representa o tamanho da senha */
 .quantidade-caracteres{
     display: flex;
     flex-direction: column;
     gap: 24px;
 }
 
+/* span que imprime o valor do input */
 .valor{
     width:  5.3688rem;
     height: 3.4375rem;
@@ -136,12 +141,13 @@ h2{
     padding: 0.8125rem 0 0 0.7500rem;
 }
 
+/* input range */
 .barra{
     background: linear-gradient(to right, var(--cor-fonte-principal) 0%, var(--cor-fonte-principal) 30%, var(--cor-fundo-output) 30%, var(--cor-fundo-output) 100%);
     border: 1px solid transparent;
     border-radius: 10px;
     height: 10px;
-    width: 365px;
+    width: 300px;
     outline: none;
     transition: background 450ms ease-in;
     -webkit-appearance: none;
@@ -159,6 +165,7 @@ h2{
     top: 0;
 }
 
+/* thumb para mosila */
 .barra::-moz-range-thumb{
     width: 28px;
     height: 28px;
@@ -169,12 +176,14 @@ h2{
     top: 0;
 }
 
+/* div das características da minha senha */
 .caracteristica{
     display: flex;
     flex-direction: column;
     gap: 24px;
   }
 
+  /* minhas opçoes de características */
   .opcao-caracteres{
     display: flex;
     flex-direction: column;
@@ -182,19 +191,40 @@ h2{
     font-size: 20px;
   }
 
+  /* alternativa das características */
 .alternativas label{
     display: flex;
     align-items: center;
 }  
 
-  .alternativas input{
+/* meu input checkbox */
+.alternativas input{
     width: 24px;
     height: 24px;
-    vertical-align: middle;
-    background-color: var(--cor-fundo-output) !important;
+    appearance: none;
     border: 1px solid var(--cor-borda-retangulo);
+    background-color: var(--cor-fundo-output);
+    cursor: pointer;
   }
 
+/* fundo e borda quando a box é marcada */
+.alternativas input:checked{
+    background-color: var(--cor-fonte-principal);
+    border: 1px solid var(--cor-fonte-principal);
+  }
+
+/* ajustando o icone de check */
+.alternativas input:checked::before{
+    background-image: url('../imagens/check-icone.png');
+    background-size: 16px 11px;
+    top: 6px;
+    left: 4px;
+    background-position: center;
+    background-repeat: no-repeat;
+    content: '';
+    width: 24px;
+    height: 24px;
+    display: block;
+}
 
 
-  /* resolver o problema da cor do input range e checkbox */
