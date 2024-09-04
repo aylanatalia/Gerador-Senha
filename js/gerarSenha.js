@@ -17,13 +17,17 @@ function gerarSenha() {
 
     if (maiuscula.checked) {
         caracteres.push(...'ABCDEFGHIJKLMNOPQRSTUVWXYZ');
-    }else if (minuscula.checked) {
+    } 
+    if (minuscula.checked) {
         caracteres.push(...'abcdefghijklmnopqrstuvwxyz');
-    }else if (numero.checked) {
+    } 
+    if (numero.checked) {
         caracteres.push(...'0123456789');
-    }else if (simbolo.checked) {
+    } 
+    if (simbolo.checked) {
         caracteres.push(...'!@#$%^&*()_+-={}:<>?');
-    } else{
+    } 
+    else{
         caracteres.push(...'abcdefghijklmnopqrstuvwxyz');
     }
 
