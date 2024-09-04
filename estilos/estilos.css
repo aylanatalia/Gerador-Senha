@@ -37,6 +37,7 @@ header{
     flex-direction: column;
     align-items: center;
     gap: 16px;
+    flex-grow: 1;
 }
 
 .texto-cabecalho{
@@ -46,6 +47,7 @@ header{
     gap: 8px;
     font-weight: 700px;
     font-size: 32px;
+    flex-wrap: wrap;
 }
 
 p {
@@ -53,6 +55,7 @@ p {
     font-size: 24px;
     font-weight: 400;
     color: var(--cor-fonte-secundaria);
+    flex-grow: 1;
 }
 
 .subtitulo {
@@ -76,7 +79,11 @@ main{
     margin-top: 57px;
     font-weight: 500;
     font-size: 40px;
-    text-align: center;
+    flex-grow: 1;
+}
+
+.senha{
+    color: var(--cor-fonte-principal);
 }
 
 .texto-output{
@@ -89,6 +96,7 @@ main{
     display: flex;
     gap: 32px;
     padding-right: 41px;
+    cursor: pointer;
 }
 
 input{
@@ -111,11 +119,14 @@ input{
     font-weight: 500;
     margin-top: 27.8px;
     border: 1px solid var(--cor-borda-retangulo);
+    flex-grow: 1;
+    flex-wrap: wrap;
 }
 
 .opcoes{
     display: flex;
     gap: 64px;
+    justify-content: space-between;
 }
 
 h2{
@@ -151,6 +162,7 @@ h2{
     outline: none;
     transition: background 450ms ease-in;
     -webkit-appearance: none;
+    flex-grow: 1;
 }
 
 /* thumb */
@@ -236,6 +248,7 @@ h2{
     var(--cor-fraca) 33.33%, 
     var(--cor-fundo-output) 33.33%,
     var(--cor-fundo-output) 100%);
+    flex-grow: 1;
 }
 
 /* legenda da barra de forca */
@@ -243,6 +256,7 @@ h2{
     margin-top: 14px;
     display: flex;
     justify-content: space-between;
+    flex-grow: 1;
 }
 
 .legenda-forca-senha p{
@@ -266,5 +280,6 @@ h2{
     font-size: 22px;
     font-weight: 500;
     color: var(--bgcolor);
+    cursor: pointer;
 }
 

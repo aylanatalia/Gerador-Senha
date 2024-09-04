@@ -27,8 +27,8 @@
                     <input type="text" id="senha" class="senha" readonly>
                 </div>
                 <div class="botao-output">
-                    <img src="./imagens/copy.png" alt="Copiar">
-                    <img src="./imagens/refresh.png" alt="Gerar senha">
+                    <img id="imagem-copiar" src="./imagens/copy.png" alt="Copiar">
+                    <img id="gerar-senha" src="./imagens/refresh.png" alt="Gerar senha">
                 </div>
             </div>
             <!-- caixa de personalização da senha a ser gerada -->
@@ -37,7 +37,7 @@
                 <div class="opcoes">
                     <div class="quantidade-caracteres">
                         <label for="numero-caracteres">Número de caracteres</label>
-                        <input type="range" class="barra" id="numero-caracteres" value="12" min="0" max="40">
+                        <input type="range" class="barra" id="numero-caracteres" value="12" min="1" max="40">
                         <span class="valor" id="valor-selecionado">12</span>
                     </div>
                     <div class="caracteristica">
@@ -69,12 +69,14 @@
                 </div>
             </div>
             <div class="botao-container">
-                <button class="botao-copiar">Copiar senha</button>
+                <button id="botao-copiar" class="botao-copiar">Copiar senha</button>
             </div>
         </div>
     </main>
     <script src="./js/range.js"></script>
     <script src="./js/forcaSenha.js"></script>
+    <script src="./js/gerarSenha.js"></script>
+    <script src="./js/copiarSenha.js"></script>
 </body>
 
 </html>
