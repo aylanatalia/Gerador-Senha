@@ -1,10 +1,8 @@
 const imagemCopiar = document.getElementById('imagem-copiar');
-const botaoCopiar = document.getElementById('botao-copiar');
 const inputSenha = document.getElementById('senha');
 
 //evento de clique
 imagemCopiar.addEventListener('click', copiarSenha);
-botaoCopiar.addEventListener('click', copiarSenha);
 
 function copiarSenha(){
     const senha = inputSenha.value;
