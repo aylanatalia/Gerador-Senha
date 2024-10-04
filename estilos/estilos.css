@@ -85,6 +85,10 @@ main {
     max-width: 90%;
 }
 
+.input-senha{
+    width: 800px;
+}
+
 .texto-output {
     display: flex;
     gap: 15px;
@@ -96,6 +100,12 @@ main {
     gap: 32px;
     padding-right: 41px;
     cursor: pointer;
+}
+
+#imagem-copiar,
+#gerar-senha{
+    width: 37px;
+    height: 37px;
 }
 
 input {
@@ -117,6 +127,7 @@ input {
     font-size: 24px;
     font-weight: 500;
     margin-top: 27.8px;
+    margin-bottom: 27.8px;
     border: 1px solid var(--cor-borda-retangulo);
     flex-grow: 1;
     flex-wrap: wrap;
@@ -153,7 +164,7 @@ h2 {
 
 /* input range */
 .barra {
-    background: linear-gradient(to right, var(--cor-fonte-principal) 0%, var(--cor-fonte-principal) 30%, var(--cor-fundo-output) 30%, var(--cor-fundo-output) 100%);
+    background: linear-gradient(to right, var(--cor-fonte-principal) 0%, var(--cor-fonte-principal) 43%, var(--cor-fundo-output) 43%, var(--cor-fundo-output) 100%);
     border: 1px solid transparent;
     border-radius: 10px;
     height: 10px;
@@ -263,25 +274,6 @@ h2 {
     font-weight: 500;
 }
 
-/* botão copiar senha */
-.botao-container {
-    display: flex;
-    justify-content: center;
-}
-
-.botao-copiar {
-    margin-top: 36px;
-    margin-bottom: 89.75px;
-    width: 154px;
-    height: 46px;
-    border-radius: 5px;
-    background-color: var(--cor-botao);
-    font-family: var(--fonte-secundaria);
-    font-size: 22px;
-    font-weight: 500;
-    color: var(--bgcolor);
-    cursor: pointer;
-}
 
 @media (max-width:800px){
     body{
